@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', ['title' => 'Compagnie Par Malice']);
 });
+
+Route::get('compagnie', function () {
+    return view('compagnie', ['title' => 'Les membres']);
+});
+
+Route::get('nina', function () {
+    return view('nina', ['title' => "C'est Nina qui m'a dit"]);
+});
+
